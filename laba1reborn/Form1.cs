@@ -14,26 +14,26 @@ namespace laba1reborn
             int number = 0;
             try
             {
-                int firstNumber = int.Parse(textBox1.Text);
-                int secondNumber = int.Parse(textBox2.Text);
+                int firstNumber = Convert.ToInt32(textBox1.Text);
+                int secondNumber = Convert.ToInt32(textBox2.Text);
 
-                if (radioButton1.Checked)
+                if (AndRadio.Checked)
                 {
                     number = firstNumber & secondNumber;
                 }
-                else if (radioButton2.Checked)
+                else if (OrRadio.Checked)
                 {
                     number = firstNumber | secondNumber;
                 }
-                else if (radioButton3.Checked)
+                else if (XORRadio.Checked)
                 {
                     number = firstNumber ^ secondNumber;
                 }
-                else if (radioButton4.Checked)
+                else if (NotFirstRadio.Checked)
                 {
                     number = ~firstNumber;
                 }
-                else if (radioButton5.Checked)
+                else if (NotSecondRadio.Checked)
                 {
                     number = ~secondNumber;
                 }
@@ -42,15 +42,15 @@ namespace laba1reborn
                     MessageBox.Show("Вам нужно выбрать одну из опций");
                 }
 
-                if (radioButton1.Checked || radioButton2.Checked || radioButton3.Checked || radioButton4.Checked || radioButton5.Checked)
+                if (AndRadio.Checked || OrRadio.Checked || XORRadio.Checked || NotFirstRadio.Checked || NotSecondRadio.Checked)
                 {
-                    BinaryResult.Text = calculate.CalculateBinary(number).ToString();
-                    OctalResult.Text = calculate.CalculateOctal(number).ToString();
-                    DecimalResult.Text = calculate.CalculateDecimal(number).ToString();
-                    HexResult.Text = calculate.CalculateHex(number).ToString();
+                    BinaryResult.Text = calculate.CalculateBinary(number);
+                    OctalResult.Text = calculate.CalculateOctal(number);
+                    DecimalResult.Text = calculate.CalculateDecimal(number);
+                    HexResult.Text = calculate.CalculateHex(number);
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex) 
             {
                 MessageBox.Show(ex.Message);
             }
@@ -60,15 +60,15 @@ namespace laba1reborn
         {
             textBox1.Clear();
             textBox2.Clear();
-            radioButton1.Checked = false;
-            radioButton2.Checked = false;
-            radioButton3.Checked = false;
-            radioButton4.Checked = false;
-            radioButton5.Checked = false;
-            BinaryResult.Text = "Binary Result";
-            OctalResult.Text = "Octal Result";
-            DecimalResult.Text = "Decimal Result";
-            HexResult.Text = "Hex Result";
+            AndRadio.Checked = false;
+            OrRadio.Checked = false;
+            XORRadio.Checked = false;
+            NotFirstRadio.Checked = false;
+            NotSecondRadio.Checked = false;
+            BinaryResult.Text = "Бинарный ответ";
+            OctalResult.Text = "Восьмеричный ответ";
+            DecimalResult.Text = "Десятичный ответ";
+            HexResult.Text = "Шестнадцатиричный ответ";
         }
 
         private void ClearButton_Click(object sender, EventArgs e)
@@ -81,29 +81,23 @@ namespace laba1reborn
         public event ClearDelegate clear;
     }
 
-    public class Calculate : ICalculate
+    public class Calculate
     {
-        public int CalculateBinary(int number)
+        public string CalculateBinary(int number)
         {
-            int result;
             string str = Convert.ToString(number, 2);
-            result = int.Parse(str);
-            return result;
+            return str;
         }
-        public int CalculateOctal(int number)
+        public string CalculateOctal(int number)
         {
-            int result;
             string str = Convert.ToString(number, 8);
-            result = int.Parse(str);
-            return result;
+            return str;
         }
 
-        public int CalculateDecimal(int number)
+        public string CalculateDecimal(int number)
         {
-            int result;
             string str = Convert.ToString(number, 10);
-            result = int.Parse(str);
-            return result;
+            return str;
         }
 
         public string CalculateHex(int number)
