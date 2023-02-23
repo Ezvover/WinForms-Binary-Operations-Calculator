@@ -10,7 +10,7 @@ namespace laba1reborn
 
         private void CalculateButton_Click(object sender, EventArgs e)
         {
-            Calculate calculate= new Calculate();
+            Calculate calculate = new Calculate();
             int number = 0;
             try
             {

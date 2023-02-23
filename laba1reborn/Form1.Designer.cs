@@ -62,9 +62,10 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(473, 153);
+            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton1.Location = new System.Drawing.Point(462, 151);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(34, 19);
+            this.radioButton1.Size = new System.Drawing.Size(55, 41);
             this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "И";
@@ -73,9 +74,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(473, 192);
+            this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton2.Location = new System.Drawing.Point(462, 191);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(48, 19);
+            this.radioButton2.Size = new System.Drawing.Size(85, 41);
             this.radioButton2.TabIndex = 3;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Или";
@@ -84,9 +86,10 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(473, 232);
+            this.radioButton3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton3.Location = new System.Drawing.Point(462, 231);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(73, 19);
+            this.radioButton3.Size = new System.Drawing.Size(139, 41);
             this.radioButton3.TabIndex = 4;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Иск. или";
@@ -95,9 +98,10 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(473, 270);
+            this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton4.Location = new System.Drawing.Point(462, 269);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(82, 19);
+            this.radioButton4.Size = new System.Drawing.Size(165, 41);
             this.radioButton4.TabIndex = 5;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Не первое";
@@ -105,6 +109,7 @@
             // 
             // CalculateButton
             // 
+            this.CalculateButton.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CalculateButton.Location = new System.Drawing.Point(432, 391);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(169, 89);
@@ -115,6 +120,7 @@
             // 
             // ClearButton
             // 
+            this.ClearButton.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ClearButton.Location = new System.Drawing.Point(463, 517);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(92, 38);
@@ -126,63 +132,70 @@
             // BinaryResult
             // 
             this.BinaryResult.AutoSize = true;
+            this.BinaryResult.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BinaryResult.Location = new System.Drawing.Point(106, 193);
             this.BinaryResult.Name = "BinaryResult";
-            this.BinaryResult.Size = new System.Drawing.Size(75, 15);
+            this.BinaryResult.Size = new System.Drawing.Size(136, 30);
             this.BinaryResult.TabIndex = 8;
             this.BinaryResult.Text = "Binary Result";
             // 
             // OctalResult
             // 
             this.OctalResult.AutoSize = true;
+            this.OctalResult.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.OctalResult.Location = new System.Drawing.Point(106, 231);
             this.OctalResult.Name = "OctalResult";
-            this.OctalResult.Size = new System.Drawing.Size(70, 15);
+            this.OctalResult.Size = new System.Drawing.Size(126, 30);
             this.OctalResult.TabIndex = 9;
             this.OctalResult.Text = "Octal Result";
             // 
             // DecimalResult
             // 
             this.DecimalResult.AutoSize = true;
-            this.DecimalResult.Location = new System.Drawing.Point(106, 270);
+            this.DecimalResult.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DecimalResult.Location = new System.Drawing.Point(106, 269);
             this.DecimalResult.Name = "DecimalResult";
-            this.DecimalResult.Size = new System.Drawing.Size(85, 15);
+            this.DecimalResult.Size = new System.Drawing.Size(153, 30);
             this.DecimalResult.TabIndex = 10;
             this.DecimalResult.Text = "Decimal Result";
             // 
             // HexResult
             // 
             this.HexResult.AutoSize = true;
-            this.HexResult.Location = new System.Drawing.Point(106, 307);
+            this.HexResult.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HexResult.Location = new System.Drawing.Point(106, 316);
             this.HexResult.Name = "HexResult";
-            this.HexResult.Size = new System.Drawing.Size(63, 15);
+            this.HexResult.Size = new System.Drawing.Size(114, 30);
             this.HexResult.TabIndex = 11;
             this.HexResult.Text = "Hex Result";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(353, 53);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(320, 41);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 15);
+            this.label5.Size = new System.Drawing.Size(157, 30);
             this.label5.TabIndex = 12;
             this.label5.Text = "Первое число";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(565, 53);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(535, 41);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 15);
+            this.label6.Size = new System.Drawing.Size(152, 30);
             this.label6.TabIndex = 13;
             this.label6.Text = "Второе число";
             // 
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(473, 305);
+            this.radioButton5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton5.Location = new System.Drawing.Point(462, 316);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(81, 19);
+            this.radioButton5.Size = new System.Drawing.Size(162, 41);
             this.radioButton5.TabIndex = 14;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Не второе";
