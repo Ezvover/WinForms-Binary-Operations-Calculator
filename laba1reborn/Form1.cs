@@ -21,27 +21,34 @@ namespace laba1reborn
                 {
                     number = firstNumber & secondNumber;
                 }
-                if (radioButton2.Checked)
+                else if (radioButton2.Checked)
                 {
                     number = firstNumber | secondNumber;
                 }
-                if (radioButton3.Checked)
+                else if (radioButton3.Checked)
                 {
                     number = firstNumber ^ secondNumber;
                 }
-                if (radioButton4.Checked)
+                else if (radioButton4.Checked)
                 {
                     number = ~firstNumber;
                 }
-                if (radioButton5.Checked)
+                else if (radioButton5.Checked)
                 {
                     number = ~secondNumber;
                 }
+                else
+                {
+                    MessageBox.Show("Вам нужно выбрать одну из опций");
+                }
 
-                BinaryResult.Text = calculate.CalculateBinary(number).ToString();
-                OctalResult.Text = calculate.CalculateOctal(number).ToString();
-                DecimalResult.Text = calculate.CalculateDecimal(number).ToString();
-                HexResult.Text = calculate.CalculateHex(number).ToString();
+                if (radioButton1.Checked || radioButton2.Checked || radioButton3.Checked || radioButton4.Checked || radioButton5.Checked)
+                {
+                    BinaryResult.Text = calculate.CalculateBinary(number).ToString();
+                    OctalResult.Text = calculate.CalculateOctal(number).ToString();
+                    DecimalResult.Text = calculate.CalculateDecimal(number).ToString();
+                    HexResult.Text = calculate.CalculateHex(number).ToString();
+                }
             }
             catch(Exception ex)
             {
